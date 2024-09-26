@@ -1,0 +1,68 @@
+/* statitic.css */
+body {
+    font-family: 'Open sans', sans-serif;
+    background-color: #CFEEFF;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Ensure both items stretch to the same height */
+    margin-bottom: 20px;
+}
+
+.chart-container, .table-container {
+    width: 48%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    background-color: #f4f4f9;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #0A57A2;
+    color: #fff;
+}
+
+.table-container tbody tr:nth-child(even) {
+    background-color: #CFEEFF;
+}
+
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+    flex-grow: 1; /* Ensures the canvas takes the available space */
+}
